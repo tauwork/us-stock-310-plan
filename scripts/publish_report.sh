@@ -5,6 +5,10 @@
 # 用法：
 #   ./scripts/publish_report.sh pre    # 生成盘前策略报告
 #   ./scripts/publish_report.sh post   # 生成盘后总结报告
+#
+# 环境变量要求：
+#   GITHUB_PAT - GitHub Fine-grained PAT
+#   如未设置则尝试从 get_token.sh 获取
 # ============================================================
 
 set -e
@@ -22,23 +26,32 @@ echo "=========================================="
 # 1. 生成报告
 cd "$PROJECT_DIR"
 echo ""
-echo "[1/4] 正在生成报告..."
+echo "[1/3] 正在生成报告..."
 python3 scripts/generate_report.py --type "$REPORT_TYPE"
 
 # 2. 获取 GitHub Token
 echo ""
-echo "[2/4] 正在配置 GitHub..."
-source "$PROJECT_DIR/../.codebuddy/skills/github-connector/scripts/get_token.sh" github 2>/dev/null || \
-source /root/.codebuddy/skills/github-connector/scripts/get_token.sh github
+echo "[2/3] 正在配置 GitHub 推送..."
 
-# 3. 配置远程仓库
+# 优先使用环境变量，否则尝试 get_token.sh
+if [ -n "$GITHUB_PAT" ]; then
+    GIT_TOKEN="$GITHUB_PAT"
+elif [ -f /root/.codebuddy/skills/github-connector/scripts/get_token.sh ]; then
+    source /root/.codebuddy/skills/github-connector/scripts/get_token.sh github 2>/dev/null || true
+    GIT_TOKEN="${GITHUB_TOKEN}"
+fi
+
+if [ -z "$GIT_TOKEN" ]; then
+    echo "无法获取 GitHub Token，跳过推送。请设置 GITHUB_PAT 环境变量。"
+    exit 0
+fi
+
+git remote set-url origin "https://oauth2:${GIT_TOKEN}@github.com/tauwork/us-stock-310-agent.git" 2>/dev/null || true
+
+# 3. 提交并推送
 echo ""
-echo "[3/4] 正在提交到 GitHub..."
-cd "$PROJECT_DIR"
-git remote set-url origin "https://oauth2:${GITHUB_TOKEN}@github.com/tauwork/us-stock-310-agent.git" 2>/dev/null || true
-
-# 4. 提交并推送
-git add data/daily/ data/knowledge/
+echo "[3/3] 正在提交到 GitHub..."
+git add data/daily/ data/knowledge/ scripts/
 REPORT_DATE=$(date '+%Y%m%d')
 if [ "$REPORT_TYPE" = "pre" ]; then
     COMMIT_MSG="📊 每日操盘报告: ${REPORT_DATE} 盘前策略"
@@ -46,7 +59,6 @@ else
     COMMIT_MSG="📋 每日操盘报告: ${REPORT_DATE} 盘后复盘"
 fi
 
-# 检查是否有变更
 if git diff --cached --quiet; then
     echo "没有新的变更需要提交。"
 else
@@ -55,7 +67,6 @@ else
         commit -m "$COMMIT_MSG"
     
     echo ""
-    echo "[4/4] 正在推送到远程仓库..."
     git push origin main
 fi
 
