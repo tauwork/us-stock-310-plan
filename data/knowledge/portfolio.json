@@ -1,0 +1,239 @@
+{
+  "last_updated": "2026-07-11",
+  "holdings": [
+    {
+      "ticker": "CRCL",
+      "name": "Circle Internet Group",
+      "shares": 800,
+      "cost_basis": 75.094,
+      "sector": "Crypto/Fintech",
+      "description": "Circle Internet Group是USDC稳定币发行商，是全球第二大稳定币运营商。公司于2025年上市，受益于加密货币市场扩张和稳定币监管框架的逐步清晰。核心业务包括USDC发行与运营、加密支付基础设施。",
+      "investment_thesis": "稳定币赛道龙头，USDC市值持续增长，受益于加密监管明朗化。Circle持有大量美国国债作为USDC储备金，在加息周期中享受利息收入。",
+      "key_events": [
+        "USDC市值变化",
+        "美国稳定币立法进展",
+        "加密市场监管动态",
+        "Circle与交易所/支付公司合作公告",
+        "季度储备金证明报告"
+      ],
+      "risk_factors": [
+        "稳定币监管不确定性",
+        "USDC脱锚风险（历史上曾发生）",
+        "加密市场周期性波动",
+        "Tether竞争压力"
+      ]
+    },
+    {
+      "ticker": "XE",
+      "name": "X-Energy",
+      "shares": 1200,
+      "cost_basis": 30.518,
+      "sector": "Nuclear Energy",
+      "description": "X-Energy是先进核反应堆开发商，专注于第四代高温气冷堆（HTGR）技术Xe-100和TRISO-X燃料。2026年4月IPO，发行价$16-$19，IPO价格$23。公司受益于AI数据中心对清洁基载电力的巨大需求。",
+      "investment_thesis": "核电复兴主题核心标的。AI数据中心电力需求爆发式增长，科技巨头（微软、谷歌、亚马逊等）积极签署核电购电协议。X-Energy的小型模块化反应堆技术适合为数据中心提供24/7清洁电力。",
+      "key_events": [
+        "核电项目审批进展",
+        "科技公司核电购电协议（PPA）",
+        "DOE贷款/补贴进展",
+        "Xe-100商业化时间表",
+        "核能政策与监管变化"
+      ],
+      "risk_factors": [
+        "核电项目审批周期长、不确定性大",
+        "技术尚未完全商业化验证",
+        "建设成本超支风险",
+        "核安全监管政策变化",
+        "竞争对手（NuScale、Oklo等）"
+      ],
+      "current_price": 15.96,
+      "analyst_target": 37.86,
+      "consensus": "Moderate Buy",
+      "price_date": "2026-07-10"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology",
+      "shares": 10,
+      "cost_basis": 970,
+      "sector": "Semiconductor/Memory",
+      "description": "美光科技是全球领先的存储芯片制造商，产品包括DRAM、NAND Flash和高带宽存储器（HBM）。HBM是AI GPU的关键组件，需求随AI算力增长而爆发。",
+      "investment_thesis": "AI驱动HBM需求爆发，存储芯片周期上行。美光是美国唯一的大型DRAM制造商，受益于CHIPS法案补贴和AI供应链本土化趋势。HBM3E产品已量产出货给NVIDIA。",
+      "key_events": [
+        "存储芯片价格周期（DRAM/NAND现货价）",
+        "HBM产能扩张进展",
+        "CHIPS法案补贴进展",
+        "季度财报（毛利率、HBM收入占比）",
+        "SK Hynix竞争动态"
+      ],
+      "risk_factors": [
+        "存储芯片周期性波动",
+        "SK海力士/三星竞争",
+        "AI需求放缓风险",
+        "中美科技战影响对华销售"
+      ],
+      "current_price": 979.30,
+      "analyst_target": 1600,
+      "consensus": "Buy",
+      "price_date": "2026-07-10"
+    },
+    {
+      "ticker": "GLW",
+      "name": "Corning",
+      "shares": 30,
+      "cost_basis": 191,
+      "sector": "Technology/Materials",
+      "description": "康宁公司是特种玻璃和陶瓷材料龙头，产品广泛应用于光纤通信、显示技术、移动设备、汽车等领域。受益于AI数据中心光纤需求爆发。",
+      "investment_thesis": "AI数据中心光纤连接需求爆发性增长，康宁是光纤和连接解决方案的主要供应商。Q2 2025业绩创纪录，销售额增长12%至40亿美元。显示技术和移动设备业务提供稳定现金流。",
+      "key_events": [
+        "AI数据中心光纤部署进展",
+        "季度财报（光纤业务增长）",
+        "5G/6G网络建设进展",
+        "显示面板行业周期"
+      ],
+      "risk_factors": [
+        "光纤需求增速可能放缓",
+        "显示面板行业周期性",
+        "竞争对手（住友、普睿司曼等）",
+        "原材料成本波动"
+      ],
+      "current_price": 191.12,
+      "price_date": "2026-07-10"
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel",
+      "shares": 50,
+      "cost_basis": 130.63,
+      "sector": "Semiconductor/CPU",
+      "description": "英特尔是全球最大的CPU制造商，正在推进IDM 2.0战略转型，投资先进制程（18A等）和代工业务。2024年股价暴跌60%，2025年开始复苏。",
+      "investment_thesis": "困境反转主题。英特尔18A制程有望2025-2026年量产，代工业务获得新客户。AI PC推动CPU升级周期。CHIPS法案提供资金支持。但AMD竞争加剧、代工业务亏损是需要关注的风险。",
+      "key_events": [
+        "18A制程进展与客户导入",
+        "代工业务盈亏平衡时间表",
+        "AI PC/数据中心CPU市场份额",
+        "CHIPS法案资金到位情况",
+        "CEO战略调整"
+      ],
+      "risk_factors": [
+        "AMD/NVIDIA竞争压力",
+        "代工业务持续亏损",
+        "先进制程良率问题",
+        "PC市场萎缩",
+        "管理层变动风险"
+      ]
+    },
+    {
+      "ticker": "AAOI",
+      "name": "Applied Optoelectronics",
+      "shares": 40,
+      "cost_basis": 153.2,
+      "sector": "Optoelectronics/Data Center",
+      "description": "应用光电是光纤收发器和光模块制造商，产品用于数据中心、CATV和光纤到户网络。受益于AI数据中心对高速光模块（400G/800G）的需求爆发。",
+      "investment_thesis": "AI数据中心光模块需求持续增长，800G/1.6T光模块升级周期启动。但公司盈利能力较弱，过去12个月EPS为-$0.66，估值较高（P/S 21x）。",
+      "key_events": [
+        "800G/1.6T光模块订单",
+        "季度财报（收入增速和毛利率）",
+        "数据中心光模块需求趋势",
+        "竞争格局变化（中际旭创等）"
+      ],
+      "risk_factors": [
+        "持续亏损，盈利能力弱",
+        "高估值风险（P/S 21x）",
+        "中国竞争对手（中际旭创等）",
+        "内部人士大量卖出（3个月卖出$8671万）",
+        "空头比例高达13.93%"
+      ],
+      "current_price": 119.92,
+      "analyst_target": 113.80,
+      "consensus": "Hold",
+      "price_date": "2026-07-10"
+    },
+    {
+      "ticker": "CRML",
+      "name": "Critical Metals Corp",
+      "shares": 500,
+      "cost_basis": 8.64,
+      "sector": "Mining/Critical Minerals",
+      "description": "Critical Metals Corp是稀土和关键矿物开采公司，专注于欧洲和北美关键矿产供应链。受益于全球清洁能源转型和供应链多元化趋势。",
+      "investment_thesis": "关键矿产供应链安全是美欧战略重点。稀土和锂等矿产对电动车、风电、军工至关重要。西方寻求减少对中国稀土供应链的依赖，CRML有望受益。但公司处于早期阶段，风险较高。",
+      "key_events": [
+        "稀土/关键矿产价格走势",
+        "欧美关键矿产政策/补贴",
+        "矿山开发进展和产量指引",
+        "与中国稀土供应链竞争"
+      ],
+      "risk_factors": [
+        "公司处于早期阶段，收入不确定",
+        "矿产价格波动",
+        "矿山开发成本超支",
+        "中国稀土供应链垄断地位",
+        "融资稀释风险"
+      ],
+      "current_price": 7.95,
+      "price_date": "2026-07-10"
+    }
+  ],
+  "watchlist": [
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "sector": "AI/Semiconductor",
+      "reason": "AI GPU绝对龙头，HBM需求推动MU，数据中心建设推动GLW/AAOI",
+      "signal": "回调至200日均线或PE回归合理区间时建仓"
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom",
+      "sector": "AI/Semiconductor",
+      "reason": "AI定制芯片和网络芯片龙头，与苹果合作续签至2031年",
+      "signal": "回调5%-10%时建仓"
+    },
+    {
+      "ticker": "SMR",
+      "name": "NuScale Power",
+      "sector": "Nuclear Energy",
+      "reason": "与XE同属核电赛道，小型模块化反应堆，用于分散配置",
+      "signal": "核电政策利好或科技公司购电协议时建仓"
+    },
+    {
+      "ticker": "OKLO",
+      "name": "Oklo",
+      "sector": "Nuclear Energy",
+      "reason": "先进核反应堆开发商，Sam Altman支持，核电赛道新秀",
+      "signal": "技术突破或项目获批时建仓"
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology",
+      "sector": "AI/Semiconductor",
+      "reason": "AI数据中心网络芯片和定制ASIC，受益于AI基础设施建设",
+      "signal": "回调或财报超预期后建仓"
+    }
+  ],
+  "macro_events": {
+    "fed_policy": {
+      "title": "美联储政策",
+      "latest": "2026年7月10日，CME FedWatch显示美联储7月维持利率不变概率74.9%，加息25bp概率25.1%。9月维持利率不变概率35.7%，累计加息25bp概率51.1%。6月会议纪要显示少数官员支持6月加息。市场预期美联储可能在9月启动加息。",
+      "impact": "加息预期对成长股（XE、CRML）估值构成压力；利好金融/价值板块。高利率环境对MU等资本密集型半导体企业融资成本有影响。",
+      "next_event": "7月28-29日 FOMC会议"
+    },
+    "trade_war": {
+      "title": "贸易战/关税",
+      "latest": "2026年关税战持续升级。特朗普政府提议对60个贸易伙伴征收10%以上关税，涉及强迫劳动问题。最高法院裁定IEEPA关税违宪，但贸易政策不确定性仍高。全球关税战是二战后最严重的贸易政策动荡。",
+      "impact": "关税战推高通胀，影响全球供应链。半导体行业（MU、INTC、AAOI）可能面临对华出口限制。关键矿产（CRML）受益于供应链多元化政策。",
+      "next_event": "关注中美贸易谈判进展和关税调整"
+    },
+    "us_iran": {
+      "title": "美伊冲突",
+      "latest": "美伊冲突持续超100天。6月17日双方签署谅解备忘录，60天内就核问题和制裁展开谈判。但6月末爆发小规模冲突，谈判焦点转向霍尔木兹海峡管理权。8月中旬为谈判截止日期。",
+      "impact": "油价波动加剧，能源板块受影响。核电（XE）在能源安全逻辑下获得额外关注。冲突升级可能导致市场避险情绪上升。",
+      "next_event": "8月中旬谈判截止日期"
+    },
+    "russia_ukraine": {
+      "title": "俄乌冲突",
+      "latest": "CSIS报告显示2026年上半年俄乌战损比飙至8比1，俄军两月净丢400平方公里领土。普京与特朗普通话85分钟讨论冲突。北约峰会在土耳其安卡拉召开，讨论防务开支和俄乌冲突。",
+      "impact": "冲突持续推高国防开支和能源价格。欧洲能源转型加速，利好核电和新能源。地缘风险溢价支撑关键矿产和能源股。",
+      "next_event": "关注和平谈判进展和北约军援动态"
+    }
+  }
+}
